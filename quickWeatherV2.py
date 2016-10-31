@@ -30,7 +30,7 @@ def wunder(lat, lon, wukey):
     hourly = j['hourly_forecast'][0:13:3]
     daily = j['forecast']['simpleforecast']['forecastday']
 
-    # Turn sun rise and set times into datetimes.
+    # Turn sun rise and set times into dxatetimes.
     rise = '%s:%s' % (astro['sunrise']['hour'], astro['sunrise']['minute'])
     set = '%s:%s' % (astro['sunset']['hour'], astro['sunset']['minute'])
     sunrise = datetime.strptime(rise, '%H:%M')
