@@ -1,0 +1,4 @@
+#+TITLE: Weather Wear - For Babies
+
+The goal of this app is to inform you not only about the weather, but on what you should dress your baby with to keep it warm (or cool during warm weather). 
+
