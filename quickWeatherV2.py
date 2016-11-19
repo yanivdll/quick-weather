@@ -1,11 +1,11 @@
 #!/usr/bin/python
-
 import json
 import urllib
 import time
 from datetime import datetime
 import cgi
 import sys
+import os
 import logging
 logging.basicConfig(filename='/Users/ygilad/Library/Logs/Python/myPythonLogs.log', level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 
@@ -160,7 +160,7 @@ def wuHTML(lat, lon, wukey):
 htmlFile = open('weather.html', 'w')
 
 # My Weather Underground key.
-wukey = '7b1d7f2dda02088f'
+wukey = 'API_KEY'
 
 # Get the latitude and longitude.
 form = cgi.FieldStorage()
