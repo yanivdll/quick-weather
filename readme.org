@@ -1,4 +1,4 @@
-#+TITLE: Weather Wear - For Babies
+#+TITLE: Quick Weather
 
-The goal of this app is to inform you not only about the weather, but on what you should dress your baby with to keep it warm (or cool during warm weather). 
+Get a quick snapshot of the weather. Inspiered by [[http://www.leancrew.com/all-this/2014/02/weather-underground-in-pythonista/][Dr.Drang Weather Underground script]]
 
