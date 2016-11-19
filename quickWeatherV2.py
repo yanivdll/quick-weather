@@ -157,7 +157,7 @@ def wuHTML(lat, lon, wukey):
 #TODO: add a logic to analyze the weatear
 
 ############################## Main program ###############################
-htmlFile = open('weather.html', 'w')
+htmlFile = open('example.html', 'w')
 
 # My Weather Underground key.
 wukey = 'API_KEY'

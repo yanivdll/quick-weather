@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta name="viewport" content = "width = device-width" />
+<title>Weather</title>
+<style type="text/css">
+  body { font-family: Helvetica; }
+  p { margin-bottom: 0; }
+  h1 { font-size: 175%;
+    text-align: center;
+    margin-bottom: 0; }
+  h2 { font-size: 125%;
+    margin-top: .5em ;
+    margin-bottom: .25em; }
+  td { padding-right: 1em;}
+  td.right { text-align: right; }
+  #now { margin-left: 0; }
+  #gust { padding-left: 2.75em; }
+  div p { margin-top: .25em;
+    margin-left: .25em; }
+</style>
+</head>
+<body onload="setTimeout(function() { window.top.scrollTo(0, 1) }, 100);">
+  <h1>61&deg; &bull; Clear </h1>
+
+  <p><img width="100%" src="http://api.wunderground.com/api/7b1d7f2dda02088f/radar/image.png?centerlat=40.730610&centerlon=-74.935242&radius=100&width=480&height=360&timelabel=1&timelabel.x=10&timelabel.y=350&newmaps=1&noclutter=1" /></p>
+
+  <p id="now">Wind: North at 0 mph, gusting to 0 mph<br />
+  Feels like: 61&deg;<br />
+  Pressure: 29.79 and falling<br />
+  Sunlight: 6:47 am to 4:34 pm<br /></p>
+  <h2>Today</h2>
+  <table>
+  <tr><td class="right">3:00 PM</td><td>Partly Cloudy</td><td class="right">60&deg;</td></tr>
+<tr><td class="right">6:00 PM</td><td>Partly Cloudy</td><td class="right">57&deg;</td></tr>
+<tr><td class="right">9:00 PM</td><td>Chance of Rain</td><td class="right">55&deg;</td></tr>
+<tr><td class="right">12:00 AM</td><td>Chance of Rain</td><td class="right">48&deg;</td></tr>
+<tr><td class="right">3:00 AM</td><td>Overcast</td><td class="right">45&deg;</td></tr>
+  </table>
+  <h2>Sunday</h2>
+  <table>
+  <tr><td>Mostly Cloudy</td><td>34&deg; to 44&deg;</td></tr>
+  </table>
+  <h2>Monday</h2>
+  <table>
+  <tr><td>Partly Cloudy</td><td>34&deg; to 41&deg;</td></tr>
+  </table>
+
+</body>
+</html>
