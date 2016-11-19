@@ -5,9 +5,11 @@ import urllib
 import time
 from datetime import datetime
 import cgi
+import sys
+import logging
+logging.basicConfig(filename='/Users/ygilad/Library/Logs/Python/myPythonLogs.log', level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 
 # Functions #
-
 
 def wunder(lat, lon, wukey):
     "Return a dictionary of weather data for the given location."
@@ -24,6 +26,7 @@ def wunder(lat, lon, wukey):
 
     # Collect data.
     ca = urllib.urlopen(dataURL).read()
+    logging.debug('data url: %s' %(dataURL))
     j = json.loads(ca)
     current = j['current_observation']
     astro = j['moon_phase']
@@ -151,8 +154,10 @@ def wuHTML(lat, lon, wukey):
 
     return html
 
+#TODO: add a logic to analyze the weatear
 
 ############################## Main program ###############################
+htmlFile = open('weather.html', 'w')
 
 # My Weather Underground key.
 wukey = '7b1d7f2dda02088f'
@@ -165,6 +170,7 @@ lon = -73.935242 #float(form.getvalue('lon'))
 # Generate the HTML.
 html = wuHTML(lat, lon, wukey)
 
-print '''Content-Type: text/html
+# Write the html to webpage
+htmlFile.write(html)
+htmlFile.close()
 
-%s''' % html
