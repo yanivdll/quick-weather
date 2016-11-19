@@ -1,4 +1,4 @@
 #+TITLE: Quick Weather
 
-Get a quick snapshot of the weather. Inspiered by [[http://www.leancrew.com/all-this/2014/02/weather-underground-in-pythonista/][Dr.Drang Weather Underground script]]
+Get a quick snapshot of the weather. Inspiered by [[http://www.leancrew.com/all-this/2014/02/weather-underground-in-pythonista/][Dr.Drang Weather Underground script]].
 
